@@ -4,14 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>TypeScript Demo With Vue And Webpack</title>
+    <title>Typescript and Vue Example, Using Webpack via Laravel Mix</title>
   </head>
   <body>
+    <h1>Typescript and Vue Example, Using Webpack via Laravel Mix</h1>
+
+    <p>
+      Check the console. If you change the input, it will log a number, if
+      possible.
+    </p>
+
+    <p>The whole point is to demonstrate how TypeScript helps us make sure that a number is really (interpreted as) a number, although provided as a string.</p>
+
+    <p>
+      The component is always the same, but...
+      <ul>
+        <li>in one case even the entry file is
+            already a TypeScript file, and everything will be treated as TypeScript</li>
+        <li>in the other case we start with regular JavaScript, but we see how it's
+            possible to start using TypeScript only in a single component</li>
+      </ul>
+    </p>
+
+    <hr />
+
+    <h2>Use Typescript Progressively in an Existing Project</h2>
+
     <div id="app-with-ts-in-parts">
+      <label>Enter a number:</label><br />
       <input-component></input-component>
     </div>
 
+    <hr />
+
+    <h2>Use Typescript Right from the Beginning</h2>
+
     <div id="app-with-ts-all-the-way-through">
+      <label>Enter a number:</label><br />
       <input-component></input-component>
     </div>
 
